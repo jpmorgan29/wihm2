@@ -8,17 +8,6 @@
     tools:context="com.example.jpmorgan.wihm_223.ResultActivity">
 
 
-    <ImageButton
-        android:id="@+id/btnGraph"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="58dp"
-        android:background="@drawable/hrgraph"
-        android:onClick="ClickForGraph"
-        app:srcCompat="@drawable/hrgraph" />
-
     <TextView
         android:id="@+id/txtDisp1"
         android:layout_width="wrap_content"
@@ -43,5 +32,11 @@
         android:textSize="30sp"
         android:layout_alignBottom="@+id/txtDisp1"
         android:layout_centerHorizontal="true" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="500dip"
+        android:layout_height="300dip"
+        android:layout_marginTop="300dp" />
 
 </RelativeLayout>
